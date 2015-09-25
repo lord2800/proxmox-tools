@@ -1,0 +1,18 @@
+{
+  "name": "proxmox-tools",
+  "version": "0.0.1",
+  "description": "A collection of tools for managing puppet and proxmox hosts",
+  "bin": {
+    "autosign": "./autosign.js",
+    "enc": "./enc.js"
+  },
+  "dependencies": {
+    "js-yaml": "^3.3.1",
+    "node-forge": "^0.6.34",
+    "node-puppetdbquery": "^1.0.0",
+    "request": "^2.58.0"
+  },
+  "devDependencies": {},
+  "author": "Jeff Hubbard <lord2800@gmail.com> (https://github.com/lord2800)",
+  "license": "Unlicense"
+}
