@@ -28,6 +28,7 @@ request.get({url: url, json: true}, function (err, resp, body) {
 
 		client.get(path.join('/nodes', facts.vmnode, 'qemu', facts.vmid, 'config'), function (err, resp, body) {
 			if(err) throw err;
+			if(!body.data.description) throw new Error('Invalid node: missing description');
 
 			console.log('---');
 			console.log(yaml.dump(JSON.parse(body.data.description)));
